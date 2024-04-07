@@ -1,14 +1,12 @@
 import subscribeIcon from '../assets/subscribe.svg'
-import { NavLink } from './nav-link'
 
 export function Header() {
     return(
     <div className='flex items-center gap-5 py-2'> 
-        <img src={subscribeIcon}/>
+        <img className=" mt-3 size-10" src={subscribeIcon}/>
 
         <nav className='flex items-center gap-5'> 
-            <NavLink href="/eventos">Eventos</NavLink>
-            <NavLink href="/participantes">Participantes</NavLink>
+        <span className='text-3xl font-bold'> Pass-In</span>
         </nav>
     </div>)
 }
